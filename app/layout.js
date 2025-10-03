@@ -9,6 +9,7 @@ const inter=Inter({subsets:['latin']})
 export const metadata = {
   title: "Splitr",
   description: "The Smartest way to split expenses with friends",
+  icon:"/logos/logo-s.png"
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <ClerkProvider>
          <ConvexClientProvider>
           <Header/>
+        
         <main className="min-h-screen" > {children}</main>
 
         </ConvexClientProvider>
